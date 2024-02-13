@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper and scissor | Anand Kuamr Sharma</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <p class="game_name">Rock Paper and Scissor</p>
+        </div>
+    </header>
+    <main>
+        <div class="rules">
+            <p>Tap on the  image of your choice to play</p>
+        </div>
+        <div class="images">
+            <img class= "img" src="Images/rock.jpg" id="rock_img" alt="Rock Image"/>
+            <img class= "img" src="Images/paper.jpg" id="paper_img" alt="paper Image">
+            <img class= "img" src="Images/scissor2.jpg" id="scissor_img" alt="Scissors Image"/>
+        </div>
+        <div class="computer_choice">
+            <p id="comp_choice">Computer's choice: <span id="computer_choice"></span></p>
+        </div>
+        <div class="score_board">
+            <div class="user_score">
+                <p id="user_scoreboard">0</p>
+                <p>User</p>
+            </div>
+            <div class=" comp_score">
+                <p id="comp_scoreboard">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+        <div class="result">
+            <div class="message">
+                <p id="mesg">Your turn</p>
+            </div>
+        </div>
+    </main>
+    <script src = "app.js"></script>
+</body>
+</html>

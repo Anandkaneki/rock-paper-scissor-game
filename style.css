@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    
+}
+.navbar{
+    background-color: #3eb0a7;
+    height: 100px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.game_name{
+    font-size: 40px;
+    font-weight:bolder;
+}
+.rules{
+    width: 100%;
+    height:  auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.rules p{
+    font-size: 30px;
+}
+.images{
+    display: flex;
+    width: auto;
+    height: 230px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.img{
+    width: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 25px;
+    transition: opacity 0.3s ease;
+}
+.img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border: 4px solid #8dc7c1;
+}
+.computer_choice{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+#comp_choice, #computer_choice{
+    font-size: 2rem;
+}
+.score_board{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.user_score,.comp_score{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+#user_scoreboard, #comp_scoreboard{
+    font-size: 3rem;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.message{
+    background-color: #b2d9d4;
+    font-size: 3rem;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 700px){
+    .navbar{
+        height: 80px;
+    }
+    .game_name{
+        font-size: 30px;
+        font-weight:bolder;
+    }
+    .rules p{
+        font-size: 25px;
+    }
+    .images{
+        flex-wrap: wrap;
+    }
+    .img{
+        height: 100px;
+        width: 110px;
+    }
+    .computer_choice{
+        margin-top: 50px;
+    }
+    .score_board{
+        gap: 50px;
+    }
+    #comp_choice, #computer_choice{
+        font-size: 25px;
+    }
+    .user_score,.comp_score{
+        text-align: center;
+        font-size: 25px;
+    }
+    .message{
+        font-size: 30px;
+    }
+}
